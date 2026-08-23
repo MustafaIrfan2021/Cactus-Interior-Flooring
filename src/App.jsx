@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {
   FaBars,
   FaComments,
@@ -17,12 +18,14 @@ import {
 } from 'react-icons/fa6'
 
 import Collections from './sections/Collections'
+import ProductDetails from './sections/ProductDetails'
+import ScrollToTop from './ScrollToTop'
 import heroImage from './assets/hero.png'
 import logo from './assets/logo.png'
 import footerImg from './assets/footer_logo.png'
 import './App.css'
 
-function App() {
+function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const closeMenu = () => {
@@ -396,6 +399,18 @@ function App() {
         </div>
       </footer>
     </>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products/:slug" element={<ProductDetails />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

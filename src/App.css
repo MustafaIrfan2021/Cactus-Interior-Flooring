@@ -460,6 +460,11 @@ textarea {
   transition: transform 0.35s ease;
 }
 
+.collection-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .collection-card:hover {
   transform: translateY(-8px);
 }
