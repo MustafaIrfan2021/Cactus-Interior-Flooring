@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from './productData'
 
@@ -10,7 +11,23 @@ const PRODUCT_CATEGORIES = [
   'Gym Flooring',
 ]
 
+const CATEGORY_MAP = {
+  'Carpet Tiles': ['carpet-flooring'],
+  'Vinyl Flooring': ['vinyl-flooring'],
+  'Laminate Flooring': ['laminate-flooring'],
+  'Sports Flooring': ['gym-flooring', 'commercial-flooring', 'outdoor-flooring'],
+  'Artificial Grass': ['outdoor-flooring'],
+  'Gym Flooring': ['gym-flooring'],
+}
+
 export default function Collections() {
+  const [selectedCategory, setSelectedCategory] = useState('All')
+
+  const visibleProducts =
+    selectedCategory === 'All'
+      ? PRODUCTS
+      : PRODUCTS.filter((item) => CATEGORY_MAP[selectedCategory]?.includes(item.slug))
+
   return (
     <section id="products" className="collections-section">
       <div className="container collections-wrap">
@@ -18,19 +35,22 @@ export default function Collections() {
         <div className="title-line"></div>
 
         <div className="collections-categories" aria-label="Product categories">
-          {PRODUCT_CATEGORIES.map((category, index) => (
-            <span
+          {['All', ...PRODUCT_CATEGORIES].map((category, index) => (
+            <button
               key={category}
+              type="button"
               className="collections-chip"
               style={{ '--chip-delay': `${index * 70}ms` }}
+              onClick={() => setSelectedCategory(category)}
+              aria-pressed={selectedCategory === category}
             >
               {category}
-            </span>
+            </button>
           ))}
         </div>
 
         <div className="collections-grid">
-          {PRODUCTS.map((item, index) => (
+          {visibleProducts.map((item, index) => (
             <Link key={item.slug} to={`/products/${item.slug}`} className="collection-card-link">
               <article
                 className="collection-card"

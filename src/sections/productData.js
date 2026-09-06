@@ -1,6 +1,7 @@
 import gymTileOne from './gym_flooring/10.webp'
 import gymTileTwo from './gym_flooring/11.webp'
 import gymTileThree from './gym_flooring/12.webp'
+import gymFlooringMain from './gym_flooring/gym_Flooring.png'
 import laminateOne from './laminate_floors/Corvina-Parke-Katalogu_page-0006-scaled.webp'
 import laminateTwo from './laminate_floors/Corvina-Parke-Katalogu_page-0008-scaled.webp'
 import laminateThree from './laminate_floors/Corvina-Parke-Katalogu_page-0012-scaled.webp'
@@ -10,6 +11,15 @@ import laminateSix from './laminate_floors/Corvina-Parke-Katalogu_page-0018-scal
 import laminateSeven from './laminate_floors/Corvina-Parke-Katalogu_page-0020-scaled.webp'
 import laminateEight from './laminate_floors/Corvina-Parke-Katalogu_page-0022-scaled.webp'
 import laminateDetail from './laminate_floors/effect_pages-to-jpg-0006.webp'
+import vinylOne from './Vinyl Flooring/Vinyl_Flooring .png'
+import vinylTwo from './Vinyl Flooring/Cool-Polished-Cement-A00302.png'
+import vinylThree from './Vinyl Flooring/Dark Concrete C01301.png'
+import vinylFour from './Vinyl Flooring/Dark-Concrete-A00310.png'
+import vinylFive from './Vinyl Flooring/Hazel.png'
+import vinylSix from './Vinyl Flooring/Indigo.png'
+import vinylSeven from './Vinyl Flooring/Light Concrete C01302.png'
+import vinylEight from './Vinyl Flooring/Medium Concrete C01303.png'
+import vinylNine from './Vinyl Flooring/Polished-Cement-A00301.png'
 import woodOne from './wooden_floors/692a415f-e4a7-41bc-bdbf-00f0f4549b05.webp'
 import woodTwo from './wooden_floors/7317b037-d373-4cc3-ba62-2b2d46828989.webp'
 import woodThree from './wooden_floors/7c2454b7-068d-46cc-9b8b-ad477d062c79.webp'
@@ -21,6 +31,7 @@ import woodEight from './wooden_floors/c4ce9a9f-2f96-4690-9dc1-dba4c7c04809.webp
 
 const laminateGallery = [laminateOne, laminateTwo, laminateThree, laminateFour, laminateFive, laminateSix, laminateSeven, laminateEight, laminateDetail]
 const gymGallery = [gymTileOne, gymTileTwo, gymTileThree]
+const vinylGallery = [vinylOne, vinylTwo, vinylThree, vinylFour, vinylFive, vinylSix, vinylSeven, vinylEight, vinylNine]
 const woodGallery = [woodOne, woodTwo, woodThree, woodFour, woodFive, woodSix, woodSeven, woodEight]
 const publicImage = (name) => `/images/${name}`
 
@@ -36,7 +47,7 @@ export const PRODUCTS = [
     specifications: { thickness: '8-12 mm', finish: 'Natural embossed timber texture', installation: 'Floating click system', maintenance: 'Sweep and damp mop with a neutral cleaner' },
   },
   {
-    slug: 'gym-flooring', name: 'Gym Flooring', eyebrow: 'Sports Surfaces', image: gymTileOne, gallery: gymGallery,
+    slug: 'gym-flooring', name: 'Gym Flooring', eyebrow: 'Sports Surfaces', image: gymFlooringMain, gallery: [gymFlooringMain, gymTileOne, gymTileTwo],
     shortDescription: 'Impact-ready rubber surfaces engineered for confident movement and demanding training spaces.',
     description: 'Built for the rhythm of training, our gym flooring range absorbs impact, supports traction, and helps protect the subfloor beneath. Interlocking formats keep installation practical for studios that need a dependable, hardworking surface.',
     features: ['Shock-absorbing rubber construction', 'Interlocking puzzle-edge format', 'High-grip textured surface', 'Designed for heavy equipment zones'],
@@ -45,7 +56,7 @@ export const PRODUCTS = [
     specifications: { thickness: '15-25 mm', finish: 'Textured recycled rubber', installation: 'Interlocking loose lay', maintenance: 'Vacuum and wipe with a pH-neutral solution' },
   },
   {
-    slug: 'vinyl-flooring', name: 'Vinyl Flooring', eyebrow: 'Comfort + Performance', image: publicImage('product-granite-yards-series.jpg'), gallery: [publicImage('product-granite-yards-series.jpg'), laminateTwo, woodFive],
+    slug: 'vinyl-flooring', name: 'Vinyl Flooring', eyebrow: 'Comfort + Performance', image: vinylOne, gallery: vinylGallery,
     shortDescription: 'Versatile resilient flooring that brings visual calm, comfort, and easy care to busy interiors.',
     description: 'Designed for spaces where performance and design need to coexist, this vinyl range offers a comfortable resilient feel with expressive stone and timber visuals. It is an adaptable choice for projects that need dependable everyday performance.',
     features: ['Resilient cushioned surface', 'Water-resistant construction', 'Low-glare finish options', 'Broad design versatility'],
