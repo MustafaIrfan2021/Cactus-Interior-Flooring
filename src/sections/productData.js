@@ -28,6 +28,7 @@ import woodFive from './wooden_floors/93b52c22-bd16-4068-969f-4a61cd721384.webp'
 import woodSix from './wooden_floors/aa33e0c7-62f9-4371-a7a8-80ecae6285fd.webp'
 import woodSeven from './wooden_floors/be87025d-4e37-4e81-ba36-f60cf7a88d26.webp'
 import woodEight from './wooden_floors/c4ce9a9f-2f96-4690-9dc1-dba4c7c04809.webp'
+import spcMain from './Spc_Flooring/Spc_Flooring.png'
 
 const laminateGallery = [laminateOne, laminateTwo, laminateThree, laminateFour, laminateFive, laminateSix, laminateSeven, laminateEight, laminateDetail]
 const gymGallery = [gymTileOne, gymTileTwo, gymTileThree]
@@ -40,7 +41,7 @@ export const PRODUCTS = [
     slug: 'laminate-flooring', name: 'Laminate Flooring', eyebrow: 'AC4 + AC5 Range',
     image: laminateOne, gallery: laminateGallery,
     shortDescription: 'Refined wood looks with the resilience and practicality modern interiors demand.',
-    description: 'Our laminate collection pairs authentic timber character with a hard-wearing surface built for everyday life. Precise locking profiles make installation efficient while a considered palette brings warmth and structure to residential and commercial spaces.',
+    description: 'Laminate flooring is a stylish and cost-effective solution that replicates the look of natural wood or stone while offering superior durability. Designed with multiple protective layers, it is resistant to scratches, stains, and everyday wear, making it an ideal choice for busy households and commercial environments in Karachi. Its modern finishes bring elegance to interiors without the high cost of traditional materials. Made For Interior provides high-quality laminate flooring that combines beauty with functionality. Easy to install and maintain, our flooring solutions are available in various textures, colors, and designs to suit every interior style. Whether for homes, offices, or retail spaces, laminate flooring adds timeless charm with long-lasting performance.',
     features: ['High-density core construction', 'Scratch-resistant protective layer', 'Precision click installation', 'Natural wood-inspired finishes'],
     benefits: ['Fast, clean installation', 'Consistent finish across large areas', 'Simple daily maintenance', 'Reliable performance in active rooms'],
     applications: ['Living rooms', 'Bedrooms', 'Boutique offices', 'Retail interiors'],
@@ -49,7 +50,7 @@ export const PRODUCTS = [
   {
     slug: 'gym-flooring', name: 'Gym Flooring', eyebrow: 'Sports Surfaces', image: gymFlooringMain, gallery: [gymFlooringMain, gymTileOne, gymTileTwo],
     shortDescription: 'Impact-ready rubber surfaces engineered for confident movement and demanding training spaces.',
-    description: 'Built for the rhythm of training, our gym flooring range absorbs impact, supports traction, and helps protect the subfloor beneath. Interlocking formats keep installation practical for studios that need a dependable, hardworking surface.',
+    description: 'Gym flooring is designed to withstand heavy impact, reduce noise, and provide safety during workouts. Made from durable materials like rubber and PVC, it protects both the floor and equipment from damage while ensuring comfort and stability for users. In Karachi\'s growing fitness industry, high-quality gym flooring is essential for gyms, fitness studios, and home workout spaces. Made For Interior offers premium gym flooring solutions tailored to diverse fitness needs. Our flooring options are slip-resistant, shock-absorbent, and easy to maintain, making them ideal for high-traffic workout environments. Whether you are setting up a commercial gym or a home fitness area, our gym flooring combines durability, safety, and modern design. Sports flooring is specially engineered to provide athletes and fitness enthusiasts with a safe, durable, and high-performance surface. Designed to absorb shock and reduce the risk of injuries, it enhances comfort and performance during physical activities. Whether for indoor courts, gyms, or multipurpose halls, sports flooring ensures the right balance of traction, resilience, and longevity. Made For Interior provides premium sports flooring solutions in Karachi for basketball, badminton, tennis, snooker, golf, hockey, and indoor games flooring. Our flooring options are easy to maintain, withstand heavy use, and come in various finishes to suit different activities.',
     features: ['Shock-absorbing rubber construction', 'Interlocking puzzle-edge format', 'High-grip textured surface', 'Designed for heavy equipment zones'],
     benefits: ['Reduces noise and vibration', 'Improves underfoot comfort', 'Resists demanding daily use', 'Tiles can be replaced individually'],
     applications: ['Fitness studios', 'Weight rooms', 'Home gyms', 'Sports training areas'],
@@ -58,16 +59,16 @@ export const PRODUCTS = [
   {
     slug: 'vinyl-flooring', name: 'Vinyl Flooring', eyebrow: 'Comfort + Performance', image: vinylOne, gallery: vinylGallery,
     shortDescription: 'Versatile resilient flooring that brings visual calm, comfort, and easy care to busy interiors.',
-    description: 'Designed for spaces where performance and design need to coexist, this vinyl range offers a comfortable resilient feel with expressive stone and timber visuals. It is an adaptable choice for projects that need dependable everyday performance.',
+    description: 'PVC vinyl flooring is one of the most versatile and durable options for modern interiors. Known for its resilience, water resistance, and easy maintenance, it is a practical choice for both homes and commercial spaces. Available in a wide range of styles, colors, and textures, PVC vinyl perfectly replicates the look of wood, stone, or ceramic without the high cost or upkeep. Made For Interior provides premium vinyl flooring solutions in Karachi tailored to your needs. Whether you want to upgrade your living room, office, or retail space, our team ensures professional installation and long-lasting quality. Combining elegance with functionality, vinyl flooring enhances your interiors with style and comfort.',
     features: ['Resilient cushioned surface', 'Water-resistant construction', 'Low-glare finish options', 'Broad design versatility'],
     benefits: ['Comfortable underfoot', 'Easy to clean', 'Quiet in active spaces', 'Suitable for fast-paced renovation work'],
     applications: ['Kitchens', 'Healthcare interiors', 'Workspaces', 'Hospitality projects'],
     specifications: { thickness: '2-5 mm', finish: 'Matte stone and timber visuals', installation: 'Adhesive or click formats', maintenance: 'Regular sweeping and damp mopping' },
   },
   {
-    slug: 'spc-flooring', name: 'SPC Flooring', eyebrow: 'Stone Polymer Core', image: laminateThree, gallery: [laminateThree, laminateSix, publicImage('product-dongbao-2102-office.jpg')],
+    slug: 'spc-flooring', name: 'SPC Flooring', eyebrow: 'Stone Polymer Core', image: spcMain, gallery: [laminateThree, laminateSix, publicImage('product-dongbao-2102-office.jpg')],
     shortDescription: 'Stable, water-resistant flooring with a crisp architectural finish for contemporary projects.',
-    description: 'SPC flooring brings a mineral-rich rigid core to the familiar beauty of timber and stone visuals. Its dimensional stability and clean installation profile make it a strong choice for modern spaces with changing temperatures and active routines.',
+    description: 'SPC (Stone Plastic Composite) flooring is a premium solution designed for durability, style, and comfort. With its rigid core technology, SPC flooring is highly resistant to water, scratches, and wear, making it ideal for busy households and commercial spaces in Karachi. Its ability to withstand Pakistan\'s climate while maintaining its elegance sets it apart from other flooring options. Made For Interior offers a wide range of SPC flooring designs that replicate the natural beauty of wood and stone. Our expert team ensures precise installation, giving you a modern, long-lasting, and low-maintenance flooring option that enhances every interior.',
     features: ['Rigid stone polymer core', 'Water-resistant layered build', 'Micro-bevel plank definition', 'Protective wear layer'],
     benefits: ['Excellent dimensional stability', 'Resists everyday moisture', 'Creates a precise modern look', 'Minimal disruption during installation'],
     applications: ['Apartments', 'Showrooms', 'Cafes', 'Office fit-outs'],
