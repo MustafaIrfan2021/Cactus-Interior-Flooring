@@ -19,7 +19,10 @@ export default function ProductDetails() {
     setSelectedImage({ slug: product.slug, src: image })
     window.sessionStorage.setItem(selectionStorageKey, image)
     setImageAnimationKey((key) => key + 1)
-    if (reloadPage) window.location.reload()
+    if (reloadPage) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+      window.location.reload()
+    }
   }
 
   if (!product) {
