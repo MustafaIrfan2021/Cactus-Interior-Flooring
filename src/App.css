@@ -196,6 +196,10 @@ textarea {
     0.2s forwards;
 }
 
+.hero-content h1 span {
+  display: block;
+}
+
 @keyframes heroTextReveal {
   from {
     opacity: 0;

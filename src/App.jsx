@@ -108,13 +108,9 @@ function HomePage() {
         <div className="hero-content container">
           <div className="hero-text">
             <h1>
-              QUALITY FLOORINGS
-              <br />
-              RESERVED FOR
-              <br />
-              THOSE WHO
-              <br />
-              APPRECIATE THE FINEST
+              <span>QUALITY FLOORING</span>
+              <span>Exceptional Flooring. Distinctive Spaces.</span>
+              <span>Premium flooring solutions designed to transform your space.</span>
             </h1>
 
             <div
