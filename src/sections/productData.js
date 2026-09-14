@@ -2,15 +2,20 @@ import gymTileOne from './gym_flooring/10.webp'
 import gymTileTwo from './gym_flooring/11.webp'
 import gymTileThree from './gym_flooring/12.webp'
 import gymFlooringMain from './gym_flooring/gym_Flooring.png'
-import laminateOne from './laminate_floors/Corvina-Parke-Katalogu_page-0006-scaled.webp'
-import laminateTwo from './laminate_floors/Corvina-Parke-Katalogu_page-0008-scaled.webp'
-import laminateThree from './laminate_floors/Corvina-Parke-Katalogu_page-0012-scaled.webp'
-import laminateFour from './laminate_floors/Corvina-Parke-Katalogu_page-0014-scaled.webp'
-import laminateFive from './laminate_floors/Corvina-Parke-Katalogu_page-0016-scaled.webp'
-import laminateSix from './laminate_floors/Corvina-Parke-Katalogu_page-0018-scaled.webp'
-import laminateSeven from './laminate_floors/Corvina-Parke-Katalogu_page-0020-scaled.webp'
-import laminateEight from './laminate_floors/Corvina-Parke-Katalogu_page-0022-scaled.webp'
-import laminateDetail from './laminate_floors/effect_pages-to-jpg-0006.webp'
+import laminateMain from './laminate_floors/Effect_alp_product1.webp'
+import laminateAltay from './laminate_floors/altay_relatedproductofproduct1.webp'
+import laminateAtlas from './laminate_floors/atlas_relatedproductofproduct1.webp'
+import laminateElbruz from './laminate_floors/elbruz_relatedproductofproduct1.webp'
+import laminateEverest from './laminate_floors/Everest_relatedproductofproduct1.webp'
+import laminateFuji from './laminate_floors/fuji_relatedproductofproduct1.webp'
+import laminateLogan from './laminate_floors/logan_relatedproductofproduct1.webp'
+import laminateNirwana from './laminate_floors/Nirwana_relatedproductofproduct1.webp'
+import laminatePamir from './laminate_floors/pamir_relatedproductofproduct1.webp'
+import laminateRosso from './laminate_floors/rosso_relatedproductofproduct1.webp'
+import laminateSolaro from './laminate_floors/solaro_relatedproductofproduct1.webp'
+import laminateTibet from './laminate_floors/Tibet_relatedproductofproduct1.webp'
+import laminateToros from './laminate_floors/toros_relatedproductofproduct1.webp'
+import laminateYral from './laminate_floors/yral_relatedproductofproduct1.webp'
 import vinylOne from './Vinyl Flooring/Vinyl_Flooring .png'
 import vinylTwo from './Vinyl Flooring/Cool-Polished-Cement-A00302.png'
 import vinylThree from './Vinyl Flooring/Dark Concrete C01301.png'
@@ -30,22 +35,23 @@ import woodSeven from './wooden_floors/be87025d-4e37-4e81-ba36-f60cf7a88d26.webp
 import woodEight from './wooden_floors/c4ce9a9f-2f96-4690-9dc1-dba4c7c04809.webp'
 import spcMain from './Spc_Flooring/Spc_Flooring.png'
 
-const laminateGallery = [laminateOne, laminateTwo, laminateThree, laminateFour, laminateFive, laminateSix, laminateSeven, laminateEight, laminateDetail]
+const laminateGallery = [laminateMain, laminateAltay, laminateAtlas, laminateElbruz, laminateEverest, laminateFuji, laminateLogan, laminateNirwana, laminatePamir, laminateRosso, laminateSolaro, laminateTibet, laminateToros, laminateYral]
+const laminateGalleryNames = ['Effect', 'Altay', 'Atlas', 'Elbruz', 'Everest', 'Fuji', 'Logan', 'Nirwana', 'Pamir', 'Rosso', 'Solaro', 'Tibet', 'Toros', 'Yral']
 const gymGallery = [gymTileOne, gymTileTwo, gymTileThree]
 const vinylGallery = [vinylOne, vinylTwo, vinylThree, vinylFour, vinylFive, vinylSix, vinylSeven, vinylEight, vinylNine]
 const woodGallery = [woodOne, woodTwo, woodThree, woodFour, woodFive, woodSix, woodSeven, woodEight]
-const publicImage = (name) => `/images/${name}`
+const publicImage = (name) => `/images/${name}`   
 
 export const PRODUCTS = [
   {
     slug: 'laminate-flooring', name: 'Laminate Flooring', eyebrow: 'AC4 + AC5 Range',
-    image: laminateOne, gallery: laminateGallery,
+    image: laminateMain, gallery: laminateGallery, galleryNames: laminateGalleryNames,
     shortDescription: 'Refined wood looks with the resilience and practicality modern interiors demand.',
     description: 'Laminate flooring is a stylish and cost-effective solution that replicates the look of natural wood or stone while offering superior durability. Designed with multiple protective layers, it is resistant to scratches, stains, and everyday wear, making it an ideal choice for busy households and commercial environments in Karachi. Its modern finishes bring elegance to interiors without the high cost of traditional materials. Made For Interior provides high-quality laminate flooring that combines beauty with functionality. Easy to install and maintain, our flooring solutions are available in various textures, colors, and designs to suit every interior style. Whether for homes, offices, or retail spaces, laminate flooring adds timeless charm with long-lasting performance.',
     features: ['High-density core construction', 'Scratch-resistant protective layer', 'Precision click installation', 'Natural wood-inspired finishes'],
     benefits: ['Fast, clean installation', 'Consistent finish across large areas', 'Simple daily maintenance', 'Reliable performance in active rooms'],
     applications: ['Living rooms', 'Bedrooms', 'Boutique offices', 'Retail interiors'],
-    specifications: { thickness: '8-12 mm', finish: 'Natural embossed timber texture', installation: 'Floating click system', maintenance: 'Sweep and damp mop with a neutral cleaner' },
+    specifications: { width: '191 mm', thickness: '8 mm', 'surface resistance': 'AC4-32: Home and Office Use', 'locking system': 'L2C', pallet: '60 Piece / 110,016 m²', height: '1200 mm', package: '8 Piece / 1,8336 m² / 13,20 kg', 'border': 'Jointed', 'surface register': 'Emboss', pattern: 'Wood' },
   },
   {
     slug: 'gym-flooring', name: 'Gym Flooring', eyebrow: 'Sports Surfaces', image: gymFlooringMain, gallery: [gymFlooringMain, gymTileOne, gymTileTwo],
@@ -66,7 +72,7 @@ export const PRODUCTS = [
     specifications: { thickness: '2-5 mm', finish: 'Matte stone and timber visuals', installation: 'Adhesive or click formats', maintenance: 'Regular sweeping and damp mopping' },
   },
   {
-    slug: 'spc-flooring', name: 'SPC Flooring', eyebrow: 'Stone Polymer Core', image: spcMain, gallery: [laminateThree, laminateSix, publicImage('product-dongbao-2102-office.jpg')],
+    slug: 'spc-flooring', name: 'SPC Flooring', eyebrow: 'Stone Polymer Core', image: spcMain, gallery: [laminateAtlas, laminateSolaro, publicImage('product-dongbao-2102-office.jpg')],
     shortDescription: 'Stable, water-resistant flooring with a crisp architectural finish for contemporary projects.',
     description: 'SPC (Stone Plastic Composite) flooring is a premium solution designed for durability, style, and comfort. With its rigid core technology, SPC flooring is highly resistant to water, scratches, and wear, making it ideal for busy households and commercial spaces in Karachi. Its ability to withstand Pakistan\'s climate while maintaining its elegance sets it apart from other flooring options. Made For Interior offers a wide range of SPC flooring designs that replicate the natural beauty of wood and stone. Our expert team ensures precise installation, giving you a modern, long-lasting, and low-maintenance flooring option that enhances every interior.',
     features: ['Rigid stone polymer core', 'Water-resistant layered build', 'Micro-bevel plank definition', 'Protective wear layer'],
