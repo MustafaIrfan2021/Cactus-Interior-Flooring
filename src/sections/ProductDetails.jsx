@@ -39,6 +39,7 @@ export default function ProductDetails() {
   return (
     <main className="product-page">
       <nav className="product-nav container"><Link to="/" className="product-back"><FaArrowLeft aria-hidden="true" /> Back to collection</Link><span>Cactus Interiors &amp; Flooring</span></nav>
+      {product.slug === 'laminate-flooring' && <p className="product-series-title">AGT EFFECT SERIES</p>}
       <section className={`product-detail-card container${companionImage ? ' has-companion' : ''}`}>
         <div className="product-media">
           <div className="product-hero-image"><img key={imageAnimationKey} className={imageAnimationKey ? 'product-image-refresh' : undefined} src={mainImage} alt={product.name} />{product.galleryNames && <span className="product-image-name">{product.galleryNames[product.gallery.indexOf(mainImage)]}</span>}</div>
