@@ -3,19 +3,34 @@ import gymTileTwo from './gym_flooring/11.webp'
 import gymTileThree from './gym_flooring/12.webp'
 import gymFlooringMain from './gym_flooring/gym_Flooring.png'
 import laminateMain from './laminate_floors/Effect_alp_product1.webp'
+import laminateCard from './laminate_floors/Solaro_PRK912.webp'
+import laminateAlpPrk from './laminate_floors/Alp_PRK904.webp'
 import laminateAltay from './laminate_floors/altay_relatedproductofproduct1.webp'
+import laminateAltayPrk from './laminate_floors/Altay_PRK908.webp'
 import laminateAtlas from './laminate_floors/atlas_relatedproductofproduct1.webp'
+import laminateAtlasPrk from './laminate_floors/Atlas_PRK913.webp'
 import laminateElbruz from './laminate_floors/elbruz_relatedproductofproduct1.webp'
+import laminateElbruzPrk from './laminate_floors/Elbruz_PRK911.webp'
 import laminateEverest from './laminate_floors/Everest_relatedproductofproduct1.webp'
+import laminateEverestPrk from './laminate_floors/Everest_PRK903.webp'
 import laminateFuji from './laminate_floors/fuji_relatedproductofproduct1.webp'
+import laminateFujiPrk from './laminate_floors/Fuji_PRK905webp.webp'
 import laminateLogan from './laminate_floors/logan_relatedproductofproduct1.webp'
+import laminateLoganPrk from './laminate_floors/Logan_PRK914.webp'
 import laminateNirwana from './laminate_floors/Nirwana_relatedproductofproduct1.webp'
+import laminateNirwanaPrk from './laminate_floors/Nirvana_PRK910.webp'
 import laminatePamir from './laminate_floors/pamir_relatedproductofproduct1.webp'
+import laminatePamirPrk from './laminate_floors/Pamir_PRK906.webp'
 import laminateRosso from './laminate_floors/rosso_relatedproductofproduct1.webp'
+import laminateRossoPrk from './laminate_floors/Rosso_PRK909.webp'
 import laminateSolaro from './laminate_floors/solaro_relatedproductofproduct1.webp'
+import laminateSolaroPrk from './laminate_floors/Solaro_PRK912.webp'
 import laminateTibet from './laminate_floors/Tibet_relatedproductofproduct1.webp'
+import laminateTibetPrk from './laminate_floors/Tibet_PRK902.webp'
 import laminateToros from './laminate_floors/toros_relatedproductofproduct1.webp'
+import laminateTorosPrk from './laminate_floors/Toros_PRK901.webp'
 import laminateYral from './laminate_floors/yral_relatedproductofproduct1.webp'
+import laminateUralPrk from './laminate_floors/Ural_PRK907.webp'
 import vinylOne from './Vinyl Flooring/Vinyl_Flooring .png'
 import vinylTwo from './Vinyl Flooring/Cool-Polished-Cement-A00302.png'
 import vinylThree from './Vinyl Flooring/Dark Concrete C01301.png'
@@ -35,8 +50,8 @@ import woodSeven from './wooden_floors/be87025d-4e37-4e81-ba36-f60cf7a88d26.webp
 import woodEight from './wooden_floors/c4ce9a9f-2f96-4690-9dc1-dba4c7c04809.webp'
 import spcMain from './Spc_Flooring/Spc_Flooring.png'
 
-const laminateGallery = [laminateMain, laminateAltay, laminateAtlas, laminateElbruz, laminateEverest, laminateFuji, laminateLogan, laminateNirwana, laminatePamir, laminateRosso, laminateSolaro, laminateTibet, laminateToros, laminateYral]
-const laminateGalleryNames = ['Effect', 'Altay', 'Atlas', 'Elbruz', 'Everest', 'Fuji', 'Logan', 'Nirwana', 'Pamir', 'Rosso', 'Solaro', 'Tibet', 'Toros', 'Yral']
+const laminateGallery = [laminateMain, laminateAlpPrk, laminateAltay, laminateAltayPrk, laminateAtlas, laminateAtlasPrk, laminateElbruz, laminateElbruzPrk, laminateEverest, laminateEverestPrk, laminateFuji, laminateFujiPrk, laminateLogan, laminateLoganPrk, laminateNirwana, laminateNirwanaPrk, laminatePamir, laminatePamirPrk, laminateRosso, laminateRossoPrk, laminateSolaro, laminateSolaroPrk, laminateTibet, laminateTibetPrk, laminateToros, laminateTorosPrk, laminateYral, laminateUralPrk]
+const laminateGalleryNames = ['Alp_PRK904', 'Alp_PRK904', 'Altay_PRK908', 'Altay_PRK908', 'Atlas_PRK913', 'Atlas_PRK913', 'Elbruz_PRK911', 'Elbruz_PRK911', 'Everest_PRK903', 'Everest_PRK903', 'Fuji_PRK905', 'Fuji_PRK905', 'Logan_PRK914', 'Logan_PRK914', 'Nirvana_PRK910', 'Nirvana_PRK910', 'Pamir_PRK906', 'Pamir_PRK906', 'Rosso_PRK909', 'Rosso_PRK909', 'Solaro_PRK912', 'Solaro_PRK912', 'Tibet_PRK902', 'Tibet_PRK902', 'Toros_PRK901', 'Toros_PRK901', 'Ural_PRK907', 'Ural_PRK907']
 const gymGallery = [gymTileOne, gymTileTwo, gymTileThree]
 const vinylGallery = [vinylOne, vinylTwo, vinylThree, vinylFour, vinylFive, vinylSix, vinylSeven, vinylEight, vinylNine]
 const woodGallery = [woodOne, woodTwo, woodThree, woodFour, woodFive, woodSix, woodSeven, woodEight]
@@ -44,8 +59,24 @@ const publicImage = (name) => `/images/${name}`
 
 export const PRODUCTS = [
   {
-    slug: 'laminate-flooring', name: 'Laminate Flooring', eyebrow: 'AC4 + AC5 Range',
-    image: laminateMain, gallery: laminateGallery, galleryNames: laminateGalleryNames,
+    slug: 'laminate-flooring', name: 'Laminate Flooring', eyebrow: 'AGT EFFECT SERIES',
+    image: laminateCard, gallery: laminateGallery, galleryNames: laminateGalleryNames,
+    relatedImageBySelection: {
+      [laminateMain]: laminateAlpPrk, [laminateAlpPrk]: laminateMain,
+      [laminateAltay]: laminateAltayPrk, [laminateAltayPrk]: laminateAltay,
+      [laminateAtlas]: laminateAtlasPrk, [laminateAtlasPrk]: laminateAtlas,
+      [laminateElbruz]: laminateElbruzPrk, [laminateElbruzPrk]: laminateElbruz,
+      [laminateEverest]: laminateEverestPrk, [laminateEverestPrk]: laminateEverest,
+      [laminateFuji]: laminateFujiPrk, [laminateFujiPrk]: laminateFuji,
+      [laminateLogan]: laminateLoganPrk, [laminateLoganPrk]: laminateLogan,
+      [laminateNirwana]: laminateNirwanaPrk, [laminateNirwanaPrk]: laminateNirwana,
+      [laminatePamir]: laminatePamirPrk, [laminatePamirPrk]: laminatePamir,
+      [laminateRosso]: laminateRossoPrk, [laminateRossoPrk]: laminateRosso,
+      [laminateSolaro]: laminateSolaroPrk, [laminateSolaroPrk]: laminateSolaro,
+      [laminateTibet]: laminateTibetPrk, [laminateTibetPrk]: laminateTibet,
+      [laminateToros]: laminateTorosPrk, [laminateTorosPrk]: laminateToros,
+      [laminateYral]: laminateUralPrk, [laminateUralPrk]: laminateYral,
+    },
     shortDescription: 'Refined wood looks with the resilience and practicality modern interiors demand.',
     description: 'Laminate flooring is a stylish and cost-effective solution that replicates the look of natural wood or stone while offering superior durability. Designed with multiple protective layers, it is resistant to scratches, stains, and everyday wear, making it an ideal choice for busy households and commercial environments in Karachi. Its modern finishes bring elegance to interiors without the high cost of traditional materials. Made For Interior provides high-quality laminate flooring that combines beauty with functionality. Easy to install and maintain, our flooring solutions are available in various textures, colors, and designs to suit every interior style. Whether for homes, offices, or retail spaces, laminate flooring adds timeless charm with long-lasting performance.',
     features: ['High-density core construction', 'Scratch-resistant protective layer', 'Precision click installation', 'Natural wood-inspired finishes'],
