@@ -49,6 +49,8 @@ import woodSix from './wooden_floors/aa33e0c7-62f9-4371-a7a8-80ecae6285fd.webp'
 import woodSeven from './wooden_floors/be87025d-4e37-4e81-ba36-f60cf7a88d26.webp'
 import woodEight from './wooden_floors/c4ce9a9f-2f96-4690-9dc1-dba4c7c04809.webp'
 import spcMain from './Spc_Flooring/Spc_Flooring.png'
+import uranusSeries from './Uranus_Series/Uranus_Series.jpg'
+import groundWorksSeries from './Ground_Works_Series/Ground_Works_Series.webp'
 
 const laminateGallery = [laminateMain, laminateAlpPrk, laminateAltay, laminateAltayPrk, laminateAtlas, laminateAtlasPrk, laminateElbruz, laminateElbruzPrk, laminateEverest, laminateEverestPrk, laminateFuji, laminateFujiPrk, laminateLogan, laminateLoganPrk, laminateNirwana, laminateNirwanaPrk, laminatePamir, laminatePamirPrk, laminateRosso, laminateRossoPrk, laminateSolaro, laminateSolaroPrk, laminateTibet, laminateTibetPrk, laminateToros, laminateTorosPrk, laminateYral, laminateUralPrk]
 const laminateGalleryNames = ['Alp_PRK904', 'Alp_PRK904', 'Altay_PRK908', 'Altay_PRK908', 'Atlas_PRK913', 'Atlas_PRK913', 'Elbruz_PRK911', 'Elbruz_PRK911', 'Everest_PRK903', 'Everest_PRK903', 'Fuji_PRK905', 'Fuji_PRK905', 'Logan_PRK914', 'Logan_PRK914', 'Nirvana_PRK910', 'Nirvana_PRK910', 'Pamir_PRK906', 'Pamir_PRK906', 'Rosso_PRK909', 'Rosso_PRK909', 'Solaro_PRK912', 'Solaro_PRK912', 'Tibet_PRK902', 'Tibet_PRK902', 'Toros_PRK901', 'Toros_PRK901', 'Ural_PRK907', 'Ural_PRK907']
@@ -121,13 +123,37 @@ export const PRODUCTS = [
     specifications: { thickness: '14-20 mm', finish: 'Oil or lacquered natural timber', installation: 'Nail, glue, or engineered click', maintenance: 'Dry care with periodic timber-safe treatment' },
   },
   {
-    slug: 'carpet-flooring', name: 'Carpet Flooring', eyebrow: 'Soft Surface Collection', image: publicImage('product-dongbao-1101-room.jpg'), gallery: [publicImage('product-dongbao-1101-room.jpg'), publicImage('product-dongbao-2102-lounge.jpg'), publicImage('product-dongbao-2106-lounge.jpg')],
+    slug: 'carpet-flooring', name: 'MODULAR CARPET', eyebrow: 'Soft Surface Collection', image: publicImage('product-dongbao-1101-room.jpg'), gallery: [publicImage('product-dongbao-1101-room.jpg'), publicImage('product-dongbao-2102-lounge.jpg'), publicImage('product-dongbao-2106-lounge.jpg')],
     shortDescription: 'Layered texture and acoustic comfort for interiors that should feel as good as they look.',
     description: 'Carpet flooring softens the atmosphere of a room with tactile depth, acoustic absorption, and a generous palette of textures. Our selected ranges are suited to calm residential settings as well as polished professional environments.',
     features: ['Comfortable textile pile', 'Acoustic absorption', 'Rich tonal and textured options', 'Professional-grade backing options'],
     benefits: ['Improves room acoustics', 'Creates a warmer welcome', 'Comfortable for long periods of use', 'Supports expressive interior palettes'],
     applications: ['Bedrooms', 'Meeting rooms', 'Lounges', 'Boutique hospitality'],
     specifications: { thickness: '6-12 mm', finish: 'Textured loop or cut pile', installation: 'Full spread or carpet tile', maintenance: 'Routine vacuuming and periodic professional cleaning' },
+  },
+  {
+    slug: 'uranus-series', name: 'URANUS Series', eyebrow: 'Carpet Tiles', image: uranusSeries, gallery: [uranusSeries],
+    shortDescription: 'Durable modular carpet tiles for refined commercial interiors and high-traffic spaces.',
+    description: 'URANUS Series carpet tiles combine practical performance with a distinctive surface designed for modern commercial interiors.',
+    specifications: { format: 'Carpet tile', finish: 'Textured modular surface', installation: 'Modular loose lay or adhesive', maintenance: 'Routine vacuuming' },
+  },
+  {
+    slug: 'granite-yards', name: 'GRANITE YARDS', eyebrow: 'Carpet Tiles', image: publicImage('product-granite-yards-series.jpg'), gallery: [publicImage('product-granite-yards-series.jpg')],
+    shortDescription: 'Expressive carpet tiles inspired by natural stone for offices, hospitality, and retail spaces.',
+    description: 'GRANITE YARDS carpet tiles bring organic textures and modern tones to busy interiors while supporting durable, easy-to-maintain floor plans.',
+    specifications: { format: 'Carpet tile', finish: 'Stone-inspired textured surface', installation: 'Modular installation', maintenance: 'Routine vacuuming' },
+  },
+  {
+    slug: 'nebula-series', name: 'NEBULA Series', eyebrow: 'Carpet Tiles', image: null, gallery: [],
+    shortDescription: 'A versatile modular carpet tile collection for contemporary interior projects.',
+    description: 'NEBULA Series is reserved for a future carpet tile image and product specification update.',
+    specifications: { format: 'Carpet tile', finish: 'To be provided', installation: 'To be provided', maintenance: 'To be provided' },
+  },
+  {
+    slug: 'ground-works-series', name: 'Ground Works Series', eyebrow: 'Carpet Tiles', image: groundWorksSeries, gallery: [groundWorksSeries],
+    shortDescription: 'Hardwearing carpet tiles that create a grounded, comfortable finish for active interiors.',
+    description: 'Ground Works Series carpet tiles are designed for dependable performance and flexible layouts across commercial and hospitality environments.',
+    specifications: { format: 'Carpet tile', finish: 'Textured modular surface', installation: 'Modular installation', maintenance: 'Routine vacuuming' },
   },
   {
     slug: 'commercial-flooring', name: 'Commercial Flooring', eyebrow: 'Contract Performance', image: publicImage('product-dongbao-2104-office.jpg'), gallery: [publicImage('product-dongbao-2104-office.jpg'), publicImage('product-dongbao-2106-office.jpg'), publicImage('product-certificate-conformity.jpg')],

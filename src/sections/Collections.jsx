@@ -12,7 +12,7 @@ const PRODUCT_CATEGORIES = [
 ]
 
 const CATEGORY_MAP = {
-  'Carpet Tiles': ['carpet-flooring'],
+  'Carpet Tiles': ['uranus-series', 'granite-yards', 'nebula-series', 'ground-works-series', 'carpet-flooring'],
   'Vinyl Flooring': ['vinyl-flooring'],
   'Laminate Flooring': ['laminate-flooring'],
   'Sports Flooring': ['gym-flooring', 'commercial-flooring', 'outdoor-flooring'],
@@ -57,7 +57,7 @@ export default function Collections() {
                 style={{ '--card-delay': `${index * 85}ms` }}
               >
                 <div className="collection-image-wrap">
-                  <img src={item.image} alt={item.name} className="collection-image" loading="lazy" />
+                  {item.image && <img src={item.image} alt={item.name} className="collection-image" loading="lazy" />}
                 </div>
                 <div className="collection-content">
                   <p className="collection-subtitle">{item.eyebrow}</p>
